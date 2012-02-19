@@ -1,0 +1,209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E8999414F1407100EFC6CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E8999314F1407100EFC6CE /* main.cpp */; };
+		63E8999614F1407100EFC6CE /* facebookcli.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63E8999514F1407100EFC6CE /* facebookcli.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63E8998D14F1407100EFC6CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				63E8999614F1407100EFC6CE /* facebookcli.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63E8998F14F1407100EFC6CE /* facebookcli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = facebookcli; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E8999314F1407100EFC6CE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		63E8999514F1407100EFC6CE /* facebookcli.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = facebookcli.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E8998C14F1407100EFC6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E8998414F1407100EFC6CE = {
+			isa = PBXGroup;
+			children = (
+				63E8999214F1407100EFC6CE /* facebookcli */,
+				63E8999014F1407100EFC6CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E8999014F1407100EFC6CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E8998F14F1407100EFC6CE /* facebookcli */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E8999214F1407100EFC6CE /* facebookcli */ = {
+			isa = PBXGroup;
+			children = (
+				63E8999314F1407100EFC6CE /* main.cpp */,
+				63E8999514F1407100EFC6CE /* facebookcli.1 */,
+			);
+			path = facebookcli;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E8998E14F1407100EFC6CE /* facebookcli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E8999914F1407100EFC6CE /* Build configuration list for PBXNativeTarget "facebookcli" */;
+			buildPhases = (
+				63E8998B14F1407100EFC6CE /* Sources */,
+				63E8998C14F1407100EFC6CE /* Frameworks */,
+				63E8998D14F1407100EFC6CE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = facebookcli;
+			productName = facebookcli;
+			productReference = 63E8998F14F1407100EFC6CE /* facebookcli */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E8998614F1407100EFC6CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Burbachstraße 5";
+			};
+			buildConfigurationList = 63E8998914F1407100EFC6CE /* Build configuration list for PBXProject "facebookcli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63E8998414F1407100EFC6CE;
+			productRefGroup = 63E8999014F1407100EFC6CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E8998E14F1407100EFC6CE /* facebookcli */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E8998B14F1407100EFC6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E8999414F1407100EFC6CE /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		63E8999714F1407100EFC6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63E8999814F1407100EFC6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63E8999A14F1407100EFC6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63E8999B14F1407100EFC6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E8998914F1407100EFC6CE /* Build configuration list for PBXProject "facebookcli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E8999714F1407100EFC6CE /* Debug */,
+				63E8999814F1407100EFC6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E8999914F1407100EFC6CE /* Build configuration list for PBXNativeTarget "facebookcli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E8999A14F1407100EFC6CE /* Debug */,
+				63E8999B14F1407100EFC6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E8998614F1407100EFC6CE /* Project object */;
+}
