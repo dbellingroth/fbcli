@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		63E8999414F1407100EFC6CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E8999314F1407100EFC6CE /* main.cpp */; };
 		63E8999614F1407100EFC6CE /* facebookcli.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63E8999514F1407100EFC6CE /* facebookcli.1 */; };
+		63E8999D14F1408700EFC6CE /* fbclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E8999C14F1408700EFC6CE /* fbclient.cpp */; };
+		63E899A014F1553D00EFC6CE /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E8999F14F1553D00EFC6CE /* libcurl.dylib */; };
+		63E899A314F156DF00EFC6CE /* httpclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E899A214F156DF00EFC6CE /* httpclient.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +28,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		63633C1214F3D3ED00297453 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		63633C1314F3D3ED00297453 /* filestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filestream.h; sourceTree = "<group>"; };
+		63633C1514F3D3ED00297453 /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		63633C1614F3D3ED00297453 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		63633C1714F3D3ED00297453 /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		63633C1814F3D3ED00297453 /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		63633C1914F3D3ED00297453 /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		63633C1A14F3D3ED00297453 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		63633C1B14F3D3ED00297453 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		63633C1C14F3D3ED00297453 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
 		63E8998F14F1407100EFC6CE /* facebookcli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = facebookcli; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E8999314F1407100EFC6CE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		63E8999514F1407100EFC6CE /* facebookcli.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = facebookcli.1; sourceTree = "<group>"; };
+		63E8999C14F1408700EFC6CE /* fbclient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fbclient.cpp; sourceTree = "<group>"; };
+		63E8999E14F143F600EFC6CE /* fbclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fbclient.h; sourceTree = "<group>"; };
+		63E8999F14F1553D00EFC6CE /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		63E899A114F1556A00EFC6CE /* httpclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpclient.h; sourceTree = "<group>"; };
+		63E899A214F156DF00EFC6CE /* httpclient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = httpclient.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,15 +53,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E899A014F1553D00EFC6CE /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63633C1114F3D3ED00297453 /* rapidjson */ = {
+			isa = PBXGroup;
+			children = (
+				63633C1214F3D3ED00297453 /* document.h */,
+				63633C1314F3D3ED00297453 /* filestream.h */,
+				63633C1414F3D3ED00297453 /* internal */,
+				63633C1814F3D3ED00297453 /* prettywriter.h */,
+				63633C1914F3D3ED00297453 /* rapidjson.h */,
+				63633C1A14F3D3ED00297453 /* reader.h */,
+				63633C1B14F3D3ED00297453 /* stringbuffer.h */,
+				63633C1C14F3D3ED00297453 /* writer.h */,
+			);
+			path = rapidjson;
+			sourceTree = "<group>";
+		};
+		63633C1414F3D3ED00297453 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				63633C1514F3D3ED00297453 /* pow10.h */,
+				63633C1614F3D3ED00297453 /* stack.h */,
+				63633C1714F3D3ED00297453 /* strfunc.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
 		63E8998414F1407100EFC6CE = {
 			isa = PBXGroup;
 			children = (
+				63E8999F14F1553D00EFC6CE /* libcurl.dylib */,
+				63633C1114F3D3ED00297453 /* rapidjson */,
 				63E8999214F1407100EFC6CE /* facebookcli */,
 				63E8999014F1407100EFC6CE /* Products */,
 			);
@@ -62,6 +108,10 @@
 			children = (
 				63E8999314F1407100EFC6CE /* main.cpp */,
 				63E8999514F1407100EFC6CE /* facebookcli.1 */,
+				63E8999C14F1408700EFC6CE /* fbclient.cpp */,
+				63E8999E14F143F600EFC6CE /* fbclient.h */,
+				63E899A114F1556A00EFC6CE /* httpclient.h */,
+				63E899A214F156DF00EFC6CE /* httpclient.cpp */,
 			);
 			path = facebookcli;
 			sourceTree = "<group>";
@@ -118,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E8999414F1407100EFC6CE /* main.cpp in Sources */,
+				63E8999D14F1408700EFC6CE /* fbclient.cpp in Sources */,
+				63E899A314F156DF00EFC6CE /* httpclient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +254,7 @@
 				63E8999B14F1407100EFC6CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
